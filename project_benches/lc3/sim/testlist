@@ -1,0 +1,24 @@
+
+
+
+
+# Test list for use by RMDB file
+# File syntax is
+# TEST <testname> <repeat_count> <1st_seed> ... <nth seed>
+# If not enough seeds are provided then random seeds are used to pad
+# If no repeat count is given, default is 1
+# Relative path to UVMF_VIP_LIBRARY_HOME and UVMF_PROJECT_DIR is from within the VRMDATA
+#  structure, can be replaced with absolute path if desired
+TB_INFO lc3 { UVMF_VIP_LIBRARY_HOME=../../../../../../../../verification_ip UVMF_PROJECT_DIR=../../../../../../../../project_benches/lc3 } {  }
+TB lc3
+# pragma uvmf custom regression_suite begin
+
+TEST test_top 			1 1494662239
+TEST alu_test 			1 1503071558
+TEST memory_test 		1 664270894
+TEST control_test		1 859280958
+TEST alu_mem_test      	1 1113039624
+
+# pragma uvmf custom regression_suite end
+
+
